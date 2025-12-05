@@ -11,56 +11,62 @@
 
 <body>
     <div class="container">
-        <div id="header">
-            <h1>Athena Pascua</h1>
-            <div id="nickname">
-                <h4>A Certified Life Wonderer</h4>
-            </div>
-            
-            <div class="contact-section">
-                <button class="butContact">Contact Me</button>
-                <div class="social-icon">
-                    <i class="fa-regular fa-envelope"></i>
-                </div>
-            </div>
+        <header class="header">
+            <nav class="nav">
+                <a href="#home" data-route="home">Home</a>
+                <a href="#about" data-route="about">About</a>
+                <a href="#contact" data-route="contact">Contact</a>
+            </nav>
+        </header>
 
+  <main id="app">
+    <section id="home" class="page active">
+        <h1>Welcome to Athena's webfolio!</h1>
+
+        <img src="https://media.tenor.com/DBcVKLog4qUAAAAM/sasaki-to-miyano-sasaki-and-miyano.gif" class="single">
+      
+        <div id="one">
+            <h2>2025 Memorables</h2>
+            <ul>
+                <li>Cut ties with former childhood possessive best friend</li>
+                <li>Questioning my many areas of life</li>
+                <li>Reading a healing book</li>
+                <li>Finally liking same character with a best friend</li>
+                <li>Seeing besties for Christmas and exchanging presents</li>
+                <li>Incoming New Years Party</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="page">
+        <h1>About Me</h1>
+
+        <div class="image-gallery">    
+            <h2>2025 Watched YouTubers/Podcasters</h2>
+            <img src="images/cd.JPG" alt="listen">
+            <img src="images/cory.jpg" alt="listen">
+            <img src="images/fear.JPG" alt="listen">
+
+            <h2>Favorite Holidays</h2>
+            <img src="images/IMG_9070.jpg" alt="item">
+            <img src="images/IMG_9072.jpg" alt="item">
+            <img src="images/IMG_9073.jpg" alt="item">
+
+            <h2>Characters I Have Simular Pasts to</h2>
+            <img src="images/zuko.jpg" alt="Character">
+            <img src="images/maki.jpg" alt="Character">
+            <img src="images/todo.jpg" alt="Character">
         </div>
 
-        <div class="content">
-            <div id="one">
-                <h2>2025 Memorables</h2>
-                <ul>
-                    <li>Cut ties with former childhood possessive best friend</li>
-                    <li>Questioning my many areas of life</li>
-                    <li>Reading a healing book</li>
-                    <li>Finally liking same character with a best friend</li>
-                    <li>Seeing besties for Christmas and exchanging presents</li>
-                    <li>Incoming New Years Party</li>
-                </ul>
-            </div>
+        <p>Simply a human being living and exploring life</p>
+    </section>
 
-            <div id="two">
-                <h2>2025 Watched YouTubers/Podcasters</h2>
-                <img src="images/cd.JPG" alt="listen">
-                <img src="images/cory.jpg" alt="listen">
-                <img src="images/fear.JPG" alt="listen">
-            </div>
-
-            <div id="three">
-                <h2>Favorite Holidays</h2>
-                <img src="images/IMG_9070.jpg" alt="item">
-                <img src="images/IMG_9072.jpg" alt="item">
-                <img src="images/IMG_9073.jpg" alt="item">
-            </div>
-
-            <div id="four">
-                <h2>Characters I Relate to</h2>
-                <p>Yes, Abusive or Absent "Father" Behavior</p>
-                <img src="images/zuko.jpg" alt="Character">
-                <img src="images/maki.jpg" alt="Character">
-                <img src="images/todo.jpg" alt="Character">
-            </div>
-        </div>
-    </div>
+    <section id="contact" class="page">
+        <h1>Contact</h1>
+        <p>Send a Message to</p>
+        <h2>Email: Pascuaa@vcu.edu</h2>
+    
+    </section>
+  </main>
 </body>
 </html>
