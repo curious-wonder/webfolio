@@ -95,6 +95,7 @@ h4 {
     filter: saturate(1.08);
     /* ensure smoothness on hover-triggered layout changes */
     transition-duration: 360ms;
+}
 
 /* AI (ChatGBT, GBT-4): Prompted with "  " -> use for */
 @media (max-width: 600px) {
@@ -109,9 +110,12 @@ h4 {
     }
 }
 
+/* frosted panel: use a semi-transparent background + vendor-prefixed backdrop filter
+   -webkit-backdrop-filter is needed for Safari; background must be translucent to show blur */
 #one {
-    background: transparent;
-    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.10); /* translucent so the blur is visible */
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     padding: 9px;
     border-radius: 8px;
     justify-items: center;
@@ -122,8 +126,9 @@ h4 {
 }
 
 #two {
-    background: transparent;
-    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.10);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     padding: 10px;
     border-radius: 8px;
     width: fit-content;
@@ -131,8 +136,9 @@ h4 {
 }
 
 #three {
-    background: transparent;
-    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.10);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     padding: 10px;
     border-radius: 9px;
     width: fit-content;
@@ -140,8 +146,9 @@ h4 {
 }
 
 #four {
-    background: transparent;
-    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.10);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     padding: 10px;
     border-radius: 8px;
     width: fit-content;
