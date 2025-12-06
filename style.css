@@ -12,6 +12,10 @@ body {
 .page {
     padding: 28px;
     min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .page.active {
@@ -26,9 +30,12 @@ body {
   gap: 20px;
   row-gap: 20px;
   align-items: center;
-  /* background-color: #ddd6c744;
-  backdrop-filter: blur;
-  border-radius: 50px; */
+  /* blur the background of images */
+  background: rgba(255, 255, 255, 0.038);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 /* make headings inside the grid span the full row */
@@ -36,11 +43,11 @@ body {
   grid-column: 1 / -1;
   margin: 0 0 8px 0;
   padding-top: 8px;
-  font-size: 1.25rem;
-  color: rgb(53, 213, 160);
+  font-size: 2rem;
+  color: rgb(230, 235, 234);
   text-align: center;
   font-size: 26px;
-  text-shadow: #bc97e4 3px 3px 9px;
+  text-shadow: #be8af6 3px 3px 9px;
 }
 
 /* gallery-specific image sizing (overrides .page img for images inside .image-gallery) */
@@ -67,7 +74,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(7, 7, 7, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .page img:hover {
@@ -101,7 +108,7 @@ main {
 }
 
 .nav a {
-  color: #9888e0;
+  color: #dcd6f3;
   padding: 8px 12px;
   font-size: 20px;
   font-weight: 700;
@@ -139,9 +146,9 @@ h4 {
 
 ul {
     color: rgb(233, 232, 231);
-    font-size:medium;
+    font-size: 17px;
     font-weight: 400;
-    margin: 20px auto;
+    margin: 20px 0;
     max-width: 700px;
     padding-left: 40px;
 }
