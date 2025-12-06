@@ -134,7 +134,7 @@ h2 {
     color: rgb(188, 151, 91);
     font-size: 30px;
     font-weight: 700;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h4 {
